@@ -1,0 +1,165 @@
+body{
+    font-family: 'Times New Roman', Times, sans-serif;
+    background-color: papayawhip;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: #333;text-align: center;
+    color: rgb(92, 65, 42);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#hasil {
+    margin-top: 20px;
+}
+
+#hasil h2 {
+    color: #333;
+}
+
+#hasil p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+header {
+    background-color: rgb(228, 203, 131);
+    color: rgb(241, 217, 97);
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247, 219, 94);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 30px;
+
+}
+
+/* Grid Container */
+.Hi {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.3fr; /* Membagi menjadi tiga kolom yang sama lebar */
+    grid-template-rows: 0.5 1fr; /* Dua baris: satu untuk judul dan satu untuk konten */
+    gap: 5px; /* Jarak antar elemen */
+    margin: 0 auto; /* Agar grid berada di tengah layar */
+    max-width: 1200px; /* Batasi lebar grid */
+}
+
+/* Header */
+.Hi h1 {
+    grid-column: 1 / span 3; /* Menggunakan tiga kolom untuk judul */
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 36px;
+    background-color: rgb(247, 219, 94);
+}
+
+/* Nav (Foto pertama) */
+.Hi img:nth-child(1) {
+    grid-column: 1; /* Menempatkan di kolom pertama */
+    grid-row: 2; /* Menempatkan di baris kedua */
+    max-width: 100%; /* Agar foto mengisi lebar maksimum */
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Aside (Foto kedua) */
+.Hi img:nth-child(2) {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    grid-column: 1; /* Menempatkan di kolom kedua */
+    grid-row: 3; /* Menempatkan di baris kedua */
+    max-width: 100%; /* Agar foto mengisi lebar maksimum */
+}
+
+/* Main (Paragraf) */
+.Hi p {
+    grid-column: 3; /* Menempatkan di kolom ketiga */
+    grid-row: 2; /* Menempatkan di baris kedua */
+    text-align: justify;
+    margin: 0 50px;
+}
+
+/* Table */
+.Hi table {
+    grid-column: 1 / span 3; /* Menggunakan tiga kolom untuk tabel */
+    text-align: center; /* Tengahkan teks dalam tabel */
+    width: 100%; /* Agar tabel mengisi lebar maksimum */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* img {
+    width: 200px;
+    border-radius: 50%;
+} */
+
+/* h1{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 36px;
+    background-color: #caa7ed;
+} */
+
+/* table{
+    margin-left: auto;
+    margin-right: auto;
+} */
