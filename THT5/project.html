@@ -4,13 +4,14 @@
 
 <head>
     <title>Profil Artis </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header>
-        <img src="SMTOWN.png"  alt="Profil Beberapa Artis" height="200px" width="1400px">
+        <img src="SMTOWN.png"  alt="Profil Beberapa Artis" height="200px" width="1200px">
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="#menu">Menu</a></li>
@@ -24,6 +25,7 @@
         </ul>
     </nav>
 
+    <main class="grid-container">
     <section id="agen">
         <h2>SM Entertainment</h2>
         <p>This is SM Entertainment.</p>
@@ -32,7 +34,12 @@
             Thank you</p>
     </section>
 
-    <section id="artis">
+    <section id="artis" class="large-column">
+        <section id="agen">
+            <h2>Agency Profile</h2>
+            <p>SM Entertainment is a South Korean entertainment company established in 1995 by Lee Soo-man. It is one of the largest entertainment companies in South Korea and is known for managing and representing various K-pop artists and groups.</p>
+            <p>SM Entertainment has a long history of producing successful acts and is home to numerous popular artists such as EXO, Girls' Generation, SHINee, and Red Velvet.</p>
+        </section>
         <h2>Artist Profile</h2>
         <div class="artis-profile">
             <img src="NCT.jpeg" height="500px" width="auto"  "Foto Artis">
@@ -177,9 +184,11 @@
             </table>
         </div>
     </section>
+</main>
 
     <footer>
         <p>&copy; 2023 SM Entertainment</p>
     </footer>
+    
 </body>
 </html>

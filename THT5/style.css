@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffd6ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #444;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.artis-profile {
+    text-align: center;
+}
+
+.artis-profile img {
+    max-width: 100%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.artis-profile table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.artis-profile th, .artis-profile td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.artis-profile th {
+    background-color: #444;
+    color: #fff;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+#agen {
+    text-align: center;
+}
+
+.small-column {
+    grid-column: 1;
+}
+
+.large-column {
+    grid-column: 2;
+}
