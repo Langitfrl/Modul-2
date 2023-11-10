@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Pemweb</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        header {
+            background-color: #ffd6ff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav{
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            text-align: center;
+            list-style-type: none;
+            justify-content: center;
+            background-color: #444;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            display: inline;
+            margin-right: 10px;  
+        }
+        
+        nav ul li a {
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        main{
+            display: flex;
+            padding: 20 px;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        
+        .artis {
+            text-align: center;
+        }
+        
+        .artis img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        
+        .artis table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        
+        .artis th, .artis td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        .artis th {
+            background-color: #444;
+            color: #fff;
+        }
+        
+        footer {
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            background-color: #444;
+        }
+        
+        .grid-container {
+            gap: 5px;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(1, 2fr);
+        }
+        
+        #agen {
+            text-align: center;
+
+        }
+        
+        .small-column {
+            grid-column: 1;
+        }
+        
+        .large-column {
+            grid-column: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="SM_Logo.png" alt="Logo SM" height="30px" width="140px"></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#pemberitahuan">Notification System</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="SMTOWN.png"  alt="Profil Beberapa Artis" height="200px" width="1200px">
+    </header>
+
+    <main class="grid-container">
+    <section id="daftar isi">
+        <h2>Daftar Isi</h2>
+        <ol>
+            <li><a href="#agen">Agency Profile</a></li>
+            <li><a href="#artis">Artist Profile</a></li>
+            <li><a href="#merchandise">Merchandise</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#pemesanan">Concert Reservation</a></li>
+        </ol>
+        
+    </section>
+
+    <section id="artis" class="large-column">
+        <section id="agen">
+            <h2>This is SM Entertainment.</h2>
+            <p>SM Entertainment is a South Korean entertainment company established in 1995 by Lee Soo-man. 
+                It is one of the largest entertainment companies in South Korea and is known for managing and representing various K-pop artists and groups.
+                SM Entertainment has a long history of producing successful acts and is home to numerous popular artists such as EXO, Girls' Generation, SHINee, and Red Velvet.</p>
+            <p>We would like to inform you in advance that the privacy policy of the SM ENTERTAINMENT website will be completely revised as follows. Please refer to the above in using our services. Thank you</p>
+        </section>
+        <h2>Artist Profile</h2>
+        <div class="artis">
+            <img src="NCT.jpeg" height="500px" width="auto">
+            <h3>NCT (Neo Culture Technology)</h3>
+            <p>NCT (Neo Culture Technology) is a South Korean boy band formed and managed by SM Entertainment. 
+                Introduced in January 2016, the group currently consists of 26 members divided into six different sub-units: NCT U, NCT 127, NCT Dream, WayV, NCT DoJaeJung, and NCT New Team. 
+                They're notable for their versatility in music, vocal and rap abilities, and powerful performances, and have been cited as K-pop's "most experimental boy band" due to their concept of having limitless members.</p>
+            <table border="1">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Sub-Unit</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Lee Tae Yong (Taeyong)</td>
+                    <td>Leader, Rapper, Dancer, Vocalist, Center, Visual</td>
+                    <td rowspan="7">NCT-U, NCT 127</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Moon Tae Il (Taeil)</td>
+                    <td>Vocalist</td>
+
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>John Jun Suh (Johnny)</td>
+                    <td>Dancer, Rapper, Vocalist</td>
+
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Nakamoto Yuta (Yuta)</td>
+                    <td>Dancer, Rapper, Vocalist</td>
+
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Kim Dong Young (Doyoung)</td>
+                    <td>Vocalist</td>
+
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Jeong Jae Hyun (Jaehyun)</td>
+                    <td>Vocalist, Dancer, Rapper, Visual</td>
+
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Kim Jung Woo (Jungwoo)</td>
+                    <td>Vocalist, Dancer</td>
+
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Dong Si Cheng (Winwin)</td>
+                    <td>Vocalist, Dancer, Rapper, Visual</td>
+                    <td>NCT-U, NCT 127, WayV</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Qian Kun (Kun)</td>
+                    <td>Leader of WayV, Vocalist, Rapper</td>
+                    <td rowspan="6">NCT-U, WayV</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>Chittaphon Leechaiyapornkul (Ten)</td>
+                    <td>Dancer, Rapper, Vocalist</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>Huang Xuxi / Wong Yuk-hei (Lucas)</td>
+                    <td>Rapper, Vocalist, Visual, Center (WayV) </td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>Xiao Dejun (Xiaojun)</td>
+                    <td>Vocalist</td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td>Wong Kunhang/Huang Guanheng (Hendery)</td>
+                    <td>Dancer, Rapper, Vocalist, Visual</td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td>Liu YangYang (Yangyang)</td>
+                    <td>Rapper, Dancer, Vocalist</td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td>Mark Lee (Mark)</td>
+                    <td>Leader of NCT Dream, Rapper, Dancer, Vocalist</td>
+                    <td rowspan="2">NCT 127, NCT U, NCT Dream</td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td>Lee Dong Hyuck (Haechan)</td>
+                    <td>Vocalist, Dancer</td>
+                </tr>
+                <tr>
+                    <td>17.</td>
+                    <td>Na Jae Min (Jaemin)</td>
+                    <td>Rapper, Dancer, Vocalist, Visual</td>
+                    <td rowspan="5">NCT U, NCT Dream</td>
+                </tr>
+                <tr>
+                    <td>18.</td>
+                    <td>Lee Je No (Jeno)</td>
+                    <td>Rapper, Dancer, Vocalist, Visual</td>
+                </tr>
+                <tr>
+                    <td>19.</td>
+                    <td>Huang Ren Jun (Renjun)</td>
+                    <td>Dancer, Vocalist</td>
+                </tr>
+                <tr>
+                    <td>20.</td>
+                    <td>Zhong Chen Le (Chenle)</td>
+                    <td>Vocalist</td>
+                </tr>
+                <tr>
+                    <td>21.</td>
+                    <td>Park Ji Sung (Jisung)</td>
+                    <td>Rapper, Dancer, Vocalist, Maknae</td>
+                </tr>
+                <tr>
+                    <td>22.</td>
+                    <td>Jung Sung Chan (Sungchan)</td>
+                    <td>Rapper</td>
+                    <td rowspan="2">NCT U</td>
+                </tr>
+                <tr>
+                    <td>23.</td>
+                    <td>Osaki Shotaro (Shotaro)</td>
+                    <td>Rapper, Dancer</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2023 SM Entertainment</p>
+    </footer>
+    
+</body>
+</html>
